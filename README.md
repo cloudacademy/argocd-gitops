@@ -3,7 +3,7 @@
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
 ## Example Project
-This repo contains an example web app used to demonstrate the principals and processes of an Argo CD GitOps setup.
+This repo contains an example web app used to demonstrate the principles and processes of an Argo CD GitOps setup.
 
 ## Installation
 The following instructions have been tested with the latest version of OpenShift Local (4.11.18).
