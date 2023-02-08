@@ -27,6 +27,6 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: "OpenShift GitOps v1.1.2"
+          value: "OpenShift GitOps v1.1.3"
         - name: BACKGROUND_COLOR
           value: "yellow"
