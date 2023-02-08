@@ -38,4 +38,4 @@ spec:
         - name: BACKGROUND_COLOR
           value: "yellow"
         - name: AUTO_RELOAD
-          value: 20
+          value: "20"
