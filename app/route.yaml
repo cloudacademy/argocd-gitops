@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: webecho
+  name: webecho
+  namespace: cloudacademy
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: webecho
+    weight: 100

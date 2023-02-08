@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloudacademy
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: cloudacademy
+    server: https://kubernetes.default.svc
+  project: default
+  source: 
+    path: app
+    repoURL: https://github.com/cloudacademy/argocd-gitops
+    targetRevision: main
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
