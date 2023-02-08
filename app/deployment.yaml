@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: webecho
-        image: cloudacademydevops/webappecho:v3
+        image: cloudacademydevops/webappecho:v4
         imagePullPolicy: IfNotPresent
         command: ["/go/bin/webapp"]
         securityContext:
@@ -37,3 +37,5 @@ spec:
           value: "OpenShift GitOps v1.1.3"
         - name: BACKGROUND_COLOR
           value: "yellow"
+        - name: AUTO_RELOAD
+          value: 20
