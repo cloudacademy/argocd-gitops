@@ -23,6 +23,13 @@ spec:
         image: cloudacademydevops/webappecho:v3
         imagePullPolicy: IfNotPresent
         command: ["/go/bin/webapp"]
+        securityContext:
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop: ["ALL"]
+          seccompProfile:
+            type: RuntimeDefault
         ports:
         - containerPort: 8080
         env:
